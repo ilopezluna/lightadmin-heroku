@@ -9,12 +9,12 @@
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<groupId>org.lightadmin</groupId>
 	<artifactId>lightadmin-heroku-demo</artifactId>
 	<version>0.0.8</version>
 
-	<name>LightAdmin Demo</name>
+	<name>LightAdmin Heroku Demo</name>
 
 	<properties>
 		<container.port>8080</container.port>
@@ -24,8 +24,6 @@
 
 		<maven.compiler.source>1.6</maven.compiler.source>
 		<maven.compiler.target>1.6</maven.compiler.target>
-
-		<tomcat.version>7.0.34</tomcat.version>
 	</properties>
 
 	<dependencies>
@@ -92,21 +90,6 @@
 			<artifactId>hsqldb</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>javax.servlet.jsp</groupId>
-			<artifactId>javax.servlet.jsp-api</artifactId>
-			<version>2.2.1</version>
-			<scope>provided</scope>
-		</dependency>
 
 		<!-- tomcat deps -->
 		<dependency>
@@ -120,16 +103,6 @@
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.tomcat</groupId>
-			<artifactId>tomcat-jasper</artifactId>
-			<version>${tomcat.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.tomcat</groupId>
-			<artifactId>tomcat-jasper-el</artifactId>
-			<version>${tomcat.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.tomcat</groupId>
@@ -160,29 +133,6 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
-
-			<!-- Unpacks JSP pages bundled with LightAdmin JAR artifact to make them 
-				accessible for Servlet container 2.5 and below. Uncomment along with corresponding 
-				section of maven-dependency-plugin -->
-			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-dependency-plugin</artifactId> 
-				<executions> <execution> <id>unpack-jsp-pages</id> <phase>process-resources</phase> 
-				<goals> <goal>unpack-dependencies</goal> </goals> <configuration> <includeGroupIds>org.lightadmin</includeGroupIds> 
-				<includeArtifactIds>lightadmin</includeArtifactIds> <includes>META-INF/resources/views/**/*.jsp</includes> 
-				<outputDirectory>${project.build.directory}/lightadmin-jsp-pages</outputDirectory> 
-				<overWriteReleases>false</overWriteReleases> </configuration> </execution> 
-				</executions> </plugin> -->
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<configuration>
-					<failOnMissingWebXml>false</failOnMissingWebXml>
-					<attachClasses>true</attachClasses>
-					<!-- Uncomment along with configuration of maven-dependency-plugin -->
-					<!-- <webResources> <resource> <directory>${project.build.directory}/lightadmin-jsp-pages/META-INF/resources</directory> 
-						</resource> </webResources> -->
-				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
