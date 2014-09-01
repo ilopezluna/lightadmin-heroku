@@ -9,18 +9,15 @@
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
+	
 	<groupId>org.lightadmin</groupId>
-	<artifactId>lightadmin-demo</artifactId>
-	<version>1.0.0.M3-SNAPSHOT</version>
+	<artifactId>lightadmin-heroku-demo</artifactId>
+	<version>0.0.8</version>
 
 	<name>LightAdmin Demo</name>
 
 	<properties>
 		<container.port>8080</container.port>
-
-		<spring.version>4.0.5.RELEASE</spring.version>
-		<hibernate.version>4.3.1.Final</hibernate.version>
-		<logback.version>1.0.9</logback.version>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -141,9 +138,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>lightadmin-demo</finalName>
 		<plugins>
-
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>appassembler-maven-plugin</artifactId>

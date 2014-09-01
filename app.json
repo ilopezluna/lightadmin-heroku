@@ -1,7 +1,12 @@
 {
-  "name": "Light admin",
-  "description": "Quick and easy jpa backend",
-  "repository": "https://github.com/jimmyfm/lightadmin-heroku",
-  "logo": "http://node-js-sample.herokuapp.com/node.svg",
-  "keywords": ["java", "spring", "jpa"]
+  "name": "LightAdmin running on Heroku demo",
+  "description": "LightAdmin is a java CRUD with auto scaffolding: quick and easy",
+  "keywords": ["java", "spring", "jpa"],
+  "webiste": "https://github.com/jimmyfm/lightadmin-heroku",
+  "repository": "https://github.com/jimmyfm/lightadmin-heroku.git",
+  "logo": "https://avatars1.githubusercontent.com/u/471620",
+  "success_url", "/admin/dashboard",
+  "scripts": {},
+  "env": {},
+  "addons": []  
 }
