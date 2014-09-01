@@ -1,0 +1,7 @@
+{
+  "name": "Light admin",
+  "description": "Quick and easy jpa backend",
+  "repository": "https://github.com/jimmyfm/lightadmin-heroku",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["java", "spring", "jpa"]
+}
