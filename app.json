@@ -5,7 +5,7 @@
   "webiste": "https://github.com/jimmyfm/lightadmin-heroku",
   "repository": "https://github.com/jimmyfm/lightadmin-heroku.git",
   "logo": "https://avatars1.githubusercontent.com/u/471620",
-  "success_url", "/admin/dashboard",
+  "success_url": "/admin/dashboard",
   "scripts": {},
   "env": {},
   "addons": []  
