@@ -1,5 +1,5 @@
 {
-  "name": "LightAdmin running on Heroku demo",
+  "name": "LightAdmin running on Heroku",
   "description": "LightAdmin is a java CRUD with auto scaffolding: quick and easy",
   "keywords": ["java", "spring", "jpa"],
   "webiste": "https://github.com/jimmyfm/lightadmin-heroku",
